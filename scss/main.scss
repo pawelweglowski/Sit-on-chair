@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
+
 /*small reset*/
 
 .row {
@@ -208,7 +210,7 @@ header {
 }
 
 .offer {
-    
+
     .col-12 {
         background-color: white;
         height: 330px;
@@ -252,7 +254,7 @@ header {
             }
             .r-chair {
                 background: url("../images/box2_img.jpg") no-repeat center;
-                background-size: cover; //padding: 20px 20px;
+                background-size: cover;
             }
             .side {
                 height: 250px;
@@ -267,8 +269,109 @@ header {
         }
     }
 }
-.price-plan {
-    background-color: #F1F1F1;
-}
 
-footer {}
+.price-plan {
+
+    .mini-header {
+        background-color: #f1f1f1;
+        .row {
+            padding: 0px 50px;
+            .col-4 {
+                padding: 0px 20px;
+                p {
+                    //padding: 10px 25px;
+                    text-transform: uppercase;
+                    border-bottom: solid 6px #2BC3AC;
+                }
+            }
+        }
+
+    }
+
+    .tags {
+        background-color: #f1f1f1;
+        box-sizing: content-box;
+        .row {
+            padding: 10px 50px;
+            .col-4 {
+                padding: 10px 20px;
+                .tag {
+                    padding: 25px;
+                    color: #2BC3AC;
+                    font-weight: 500;
+                    text-align: center;
+                    border: solid 2px #D7D7D7;
+                    border-radius: 2px;
+                    height: 505px;
+                    width: 100%;
+                    float: left;
+                    background-color: #F9F9F9;
+                    position: relative;
+                    & > p {
+                        text-transform: uppercase;
+                    }
+                    .pin-out {
+                        background-color: #FFFFFF;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        border: solid 2px #D7D7D7;
+                        position: absolute;
+                        top: -40px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                    .pin-in {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        background-color: #C1C1C1;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .tag-active {
+                    padding: 25px;
+                    color: #2BC3AC;
+                    font-weight: 500;
+                    text-align: center;
+                    background-color: #27C5AA;
+                    border: solid 2px #27C5AA;
+                    border-radius: 2px;
+                    height: 505px;
+                    width: 100%;
+                    float: left;
+                    position: relative;
+                    & > p {
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                    .pin-out {
+                        background-color: #27C5AA;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        border: none;
+                        position: absolute;
+                        top: -40px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                    .pin-in {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        background-color: #F9F9F9;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+
+}

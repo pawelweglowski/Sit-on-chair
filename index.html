@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>SIT ON CHAIR</title>
+<head lang="pl-PL">
     <meta charset="utf-8">
+    <title>SIT-ON-CHAIR</title>
     <meta name="description" content="Pierwsza strona wykonana na kursie w CodersLab">
     <meta http-equiv="author" content="Paweł Węgłowski">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+    </style>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
     <div class="grid-container">
-        <header>
-            <div class="row">
-                <p class="col-2">sit <span>on</span> chair</p>
-                <nav class="col-10">
-                    <ul class="col-5">
-                        <li class="col-4 menu-more-info">
-                            <a href="oFirmie.html">o firmie</a>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <a href="akltualności.html">
+        <header class="row top">
+            <div class="col-2 logo">
+                <a href="" class="">
+                    sit
+                    <span> on </span>
+                    chair
+                </a>
+            </div>
+            <nav class="col-10">
+                <ul class="col-5">
+                    <li class="col-4 menu-more-info">
+                        <a href="oFirmie.html">o firmie</a>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="akltualności.html">
                                                 Aktualności
                                             </a>
-                                    </li>
-                                    <li>
-                                        <a href="naszTeam.html">
+                                </li>
+                                <li>
+                                    <a href="naszTeam.html">
                                                 Nasz team
                                             </a>
-                                    </li>
-                                    <li>
-                                        <a href="historia.html">
+                                </li>
+                                <li>
+                                    <a href="historia.html">
                                                 Historia
                                             </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="col-4 more-info">galeria</li>
-                        <li class="col-4 more-info">kontakt</li>
-                    </ul>
-                </nav>
-            </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col-4 more-info">galeria</li>
+                    <li class="col-4 more-info">kontakt</li>
+                </ul>
+            </nav>
+
         </header>
         <!--end of header-->
-        <section class="slider">
+        <section class="slider row">
             <div class="col-12">
                 <div class="row">
                     <div class="arrow l-arrow">
                         &lt
                     </div>
                     <div class="col-6 slider-img">
-
+                        <img src="images/black_chair.png">
                     </div>
                     <div class="col-6 slider-text">
                         <h2>sit <span>on</span> our <span>chair</span></h2>
@@ -98,18 +108,19 @@
             </div>
         </section>
         <!--end second section-->
-        <section class="price-plan">
-            <div class="col-12 mini-header">
-                <div class="row">
-                    <div class="col-4 border-bottom">
-                        <p>cennik</p>
+        <section class="row price-plan">
+            <div class="col-12">
+                <div class="row title">
+                    <div class="col-7">
+                        <h2>Cennik</h2>
+                        <div class="col-6 underline"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 tags">
+            <div class="col-12">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="tag">
+                    <div class="col-4 price-tags">
+                        <div class="col-12 tag basic">
                             <p>Basic plan</p>
                             <div class="pin-out">
                                 <div class="pin-in">
@@ -128,7 +139,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="tag-active">
+                        <div class="tag standard">
                             <p>Standard plan</p>
                             <div class="pin-out">
                                 <div class="pin-in">
@@ -173,13 +184,13 @@
             </div>
         </section>
         <!--end third section-->
-        <section class="form-box">
+        <section class="row contact-form-box">
             <div class="col-12">
                 <div class="row">
                     <div class="col-7">
-                        <div class="row">
-                            <div class="col-6">
-
+                        <div class="row title">
+                            <h2>Kontakt</h2>
+                            <div class="col-6 underline">
                             </div>
                         </div>
                         <div class="row">
@@ -192,21 +203,21 @@
                                         <input type="text" name="email" placeholder="email">
                                     </div>
                                     <div class="row">
-                                        <textarea name="text" placeholder="wiadomość"></textarea>
+                                        <textarea name="text" placeholder="wiadomość" rows="4"></textarea>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 form-box-r">
                         <div class="row">
-                            <img src="images/red_chair.png">
+                            <img src="images/red_chair.png" alt="Red chair">
                         </div>
                         <div class="row">
-                            <label>
-                                <input type="checkbox" name="data">
-                            </label>
-                            <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                            <input type="checkbox" id="agreement-checkbox">
+                            <span class="agreement">I agree for the
+                                <a href="">terms & condidtions</a>
+                            </span>
                         </div>
                         <div class="row">
                             <button id="button-send">Wyślij</button>
@@ -216,28 +227,30 @@
             </div>
         </section>
         <!--end fourth section-->
-        <footer>
+        <!--footer start-->
+        <footer class="row">
             <div class="col-12">
-                <div class="row">
-                    <div class="col-7 copyright">
-                        <p>Copyright 2018 | All Rights Reserved. - Sit On Chair</p>
+
+                <div class="col-7">
+                    <p>Copyright 2018 | All Rights Reserved. - Sit On Chair</p>
+                </div>
+                <div class="col-5">
+                    <div class="col-6 footer-media">
+                        <a href="https://www.flickr.com/"><img src="images/flickr.png" alt="flickr"></a>
+                        <a href="https://vimeo.com/"><img src="images/vimeo.png" alt="vimeo"></a>
+                        <a href="https://pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a>
+                        <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"></a>
                     </div>
-                    <div class="col-5">
-                        <div class="col-6">
-                            <img src="./images/flickr.png">
-                            <img src="./images/vimeo.png">
-                            <img src="./images/pinterest.png" />
-                            <img src="./images/twitter.png">
-                        </div>
-                        <div class="col-6">
-                            <p>Sit <span>on</span> chair</p>
-                        </div>
+                    <div class="col-6 footer-logo">
+                        <p>Sit <span>on</span> chair</p>
                     </div>
                 </div>
             </div>
+
         </footer>
         <!--end footer-->
     </div>
 </body>
+<script src="js/out.js"></script>
 
 </html>

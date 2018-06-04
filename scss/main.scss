@@ -50,7 +50,7 @@ header {
 }
 
 .price-plan {
-    background-color: lightgray;
+    background-color: #f1f1f1;
     padding: 6vh 6vw;
     .title {
         padding-top: 2vh;
@@ -61,15 +61,114 @@ header {
             border: 4px solid aqua;
         }
     }
-    
+
+
+    .tag {
+        margin-top: 8vh;
+        margin-bottom: 2vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 50vh;
+        text-align: center;
+        
+        position: relative;
+        box-sizing: border-box;
+    }
+
     .basic,
-    .standard, 
+    .standard,
     .premium {
         border: 3px solid grey;
-        border-radius: 5px;
-        
+        border-radius: 10px;
+        background-color: #F9F9F9;
+        justify-content: center;
+        position: relative;
+        .pin-in {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: #F9F9F9;
+            z-index: 2;
+            top: 25%;
+        }
+        .pin-out {
+            content: " ";
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: -32px;
+            transform: translateX(-50%);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+        .plan {
+            padding-top: 3vh;
+            text-transform: uppercase;
+            text-align: center;
+            color: aqua;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 3vh;
+        }
+        .price-circle {
+            width: 13vh;
+            height: 13vh;
+            border-radius: 50%;
+            border: 3px solid gray;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 30%;
+            font-size: 4vh;
+            .price {
+                &::after {
+                    content: 'PLN/MSC';
+                    color: gray;
+                    font-size: 15px;
+                    
+                }
+            }
+        }
+
+
+        .content-list {
+            margin-top: 20vh;
+            font-size: 2.5vh;
+            color: grey;
+            line-height: 3vh;
+            .grey-content {
+                 background-color: #f1f1f1;
+            }
+            .dark-grey-content {
+                background-color: #c2c2c2;                
+            }
+            white-content {
+                background-color: white;
+            }
+        }
+        button {
+            background-color: aqua;
+            border: none;
+            width: 13vh;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            font-size: 2vh;
+            margin-bottom: 2vh;
+            position: absolute;
+            bottom: 2vh;
+            left: 30%;
+        }
     }
-    
 }
 
 .contact-form-box {
